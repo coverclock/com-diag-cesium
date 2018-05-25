@@ -21,7 +21,7 @@ clocks are doing.
 
 ## Photographs
 
-<https://www.flickr.com/photos/johnlsloan/albums/72157685455135773>
+<https://www.flickr.com/photos/johnlsloan/albums/72157691467251400>
 
 ## Repositories
 
