@@ -13,11 +13,15 @@ Licensed under the terms of the FSF GPL v2.
 Cesium is not much more than a simple script that uses NTP and its ntpq
 command to monitor in real-time the various NTP servers/clocks on my local
 network. (I have a few, both home brew and commercial.)  It automatically
-starts up when the "pi" user is configured to automatically logs in
+starts up when the "pi" user is configured to automatically log in
 at boot time. It runs on a Raspberry Pi with a 7" touch-sensitive LCD
 display. It just sits on my desk and occasionally I touch the screen
 to bring it out of power-save mode and check the display to see what my
 clocks are doing.
+
+## Photographs
+
+<https://www.flickr.com/photos/johnlsloan/albums/72157685455135773>
 
 ## Repositories
 
@@ -40,8 +44,6 @@ clocks are doing.
 ## References
 
 <https://www.ntpsec.org/white-papers/stratum-1-microserver-howto/>
-
-<http://www.catb.org/gpsd/gpsd-time-service-howto.html>
 
 ## Contact
 
