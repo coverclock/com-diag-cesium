@@ -29,6 +29,10 @@ clocks are doing.
 
 <https://gitlab.com/NTPsec/ntpsec.git>
 
+## Distributions
+
+<http://www.ke5fx.com/heather/readme.htm>
+
 ## Related
 
 <https://github.com/coverclock/com-diag-hazer>
