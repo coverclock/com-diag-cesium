@@ -19,6 +19,11 @@ display. It just sits on my desk and occasionally I touch the screen
 to bring it out of power-save mode and check the display to see what my
 clocks are doing.
 
+Recently I've installed Lady Heather, a GPS monitoring tool (see link
+below), on this system. Now my .profile script brings up a second window
+running Lady Heather on a USB GPS device at /dev/ttyUSB0 (I'm using a
+NaviStar GR-701W).
+
 ## Photographs
 
 <https://www.flickr.com/photos/johnlsloan/albums/72157691467251400>

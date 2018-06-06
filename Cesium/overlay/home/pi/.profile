@@ -23,4 +23,7 @@ fi
 
 if [ -n "$DISPLAY" ]; then
 	( sleep 60; exec lxterminal --command="$HOME/bin/ntpquery" --geometry=98x25 ) &
+	if [ -c "/dev/ttyUSB0" ]; then
+		( sleep 60; exec heather -1u -rxu -br=9600 -tz=-7MST/MDT -b=1 -gm ) &
+	fi
 fi
