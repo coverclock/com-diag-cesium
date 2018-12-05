@@ -19,6 +19,15 @@ display. It just sits on my desk and occasionally I touch the screen
 to bring it out of power-save mode and check the display to see what my
 clocks are doing.
 
+Recently I've installed Lady Heather, a GPS monitoring tool (see link
+below), on this system. Now my .profile script brings up a second window
+running Lady Heather on a USB GPS device at /dev/ttyUSB0 (I'm using a
+NaviStar GR-701W).
+
+Even more recently, I've added a third window to run my own Hazer
+gpstool with a second USB GPS device at /dev/ttyACM0 (this one is a
+GlobalSAT BU-353W10).
+
 ## Photographs
 
 <https://www.flickr.com/photos/johnlsloan/albums/72157691467251400>
@@ -28,6 +37,10 @@ clocks are doing.
 <https://github.com/coverclock/com-diag-cesium>
 
 <https://gitlab.com/NTPsec/ntpsec.git>
+
+## Distributions
+
+<http://www.ke5fx.com/heather/readme.htm>
 
 ## Related
 
