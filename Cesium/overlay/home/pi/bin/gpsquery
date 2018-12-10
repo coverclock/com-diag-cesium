@@ -2,11 +2,11 @@
 # Copyright 2018 by the Digital Aggregates Corporation, Arvada Colorado USA.
 
 /usr/local/bin/gpstool -D /dev/ttyACM0 -b 9600 -8 -n -1 -t 10 -M 4 -E \
-	-W '\$PUBX,00' \
-	-W '\$PUBX,03' \
-	-W '\$PUBX,04' \
-	-W '\$PUBX,40,GSV,0,0,0,1,0,0' \
-	-W '\$PUBX,40,VTG,0,0,0,1,0,0' \
+	-W '$PUBX,00' \
+	-W '$PUBX,03' \
+	-W '$PUBX,04' \
+	-W '$PUBX,40,GSV,0,0,0,1,0,0' \
+	-W '$PUBX,40,VTG,0,0,0,1,0,0' \
 	-W '\xb5\x62\x06\0\0\0' \
 	-W '\xb5\x62\x06\x01\x03\0\x01\x20\x01' \
 	-W '\xb5\x62\x06\x01\x03\0\x01\x21\x01' \
