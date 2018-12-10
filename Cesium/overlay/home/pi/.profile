@@ -21,6 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+export EDITOR=vi
+
 if [ -n "$DISPLAY" ]; then
 	(
 		sleep 60
@@ -35,7 +37,7 @@ if [ -n "$DISPLAY" ]; then
 	if [ -c "/dev/ttyACM0" ]; then
 		(
 			sleep 60
-			exec lxterminal --command="/usr/local/bin/gpstool -D /dev/ttyACM0 -b 9600 -8 -n -1 -F -t 10 -M 4 -W '\$PUBX,00' -W '\$PUBX,03' -W '\$PUBX,04' -W '\$PUBX,40,GSV,0,0,0,1,0,0' -W '\$PUBX,40,VTG,0,0,0,1,0,0' -W '\\xb5\\x62\\x06\\0\\0\\0' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x01\\x20\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x01\\x21\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x01\\x22\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x0d\\x01\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x0d\\x03\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x0a\\x09\\x01' -W '\\xb5\\x62\\x06\\x01\\x03\\0\\x01\\x03\\x01' -W '\\xb5\\x62\\x06\\x39\\x08\\0\\xf7\\x56\\xb1\\x96\\x1e\\x63\\0\\0' -W '\\xb5\\x62\\x0a\\x04\\0\\0' -W '\\xb5\\x62\\x06\\x06\\0\\0' -W '\\xb5\\x62\\x06\\x31\\0\\0' -W '\\xb5\\x62\\x06\\x3e\\0\\0'" --geometry=80x50
+			exec lxterminal --command="$HOME/bin/gpsquery" --geometry=80x50
 		) &
 	fi
 fi
