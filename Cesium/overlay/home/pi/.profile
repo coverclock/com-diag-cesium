@@ -37,7 +37,7 @@ if [ -n "$DISPLAY" ]; then
 	if [ -c "/dev/ttyACM0" ]; then
 		(
 			sleep 60
-			exec lxterminal --command="$HOME/bin/gpsquery" --geometry=80x50
+			exec lxterminal --command="$HOME/bin/gpsquery" --geometry=80x100
 		) &
 	fi
 fi
