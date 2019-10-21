@@ -1,7 +1,12 @@
 #!/bin/bash
-# Copyright 2018 by the Digital Aggregates Corporation, Arvada Colorado USA.
+# Copyright 2018-2019 by the Digital Aggregates Corporation, Arvada Colorado USA.
 
-/usr/local/bin/gpstool -D /dev/ttyACM0 -b 9600 -8 -n -1 -t 10 -M 4 -E \
+PROGRAM=$(basename ${0})
+OUTPUT="./${PROGRAM}.out"
+
+nohup /usr/local/bin/gpstool \
+	-F -H ${OUTPUT} -t 10 \
+	-D /dev/ttyACM0 -b 9600 -8 -n -1 \
 	-W '$PUBX,00' \
 	-W '$PUBX,03' \
 	-W '$PUBX,04' \
@@ -20,4 +25,6 @@
 	-W '\xb5\x62\x06\x06\0\0' \
 	-W '\xb5\x62\x06\x31\0\0' \
 	-W '\xb5\x62\x06\x3e\0\0' \
-2> >(/usr/local/bin/log -S -N gpstool)
+2> >(/usr/local/bin/log -S -N gpstool) 1> /dev/null &
+
+/usr/local/bin/headless ${OUTPUT}

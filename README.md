@@ -103,3 +103,8 @@ menus.
     sudo make install
 
 Install all the files in the overlay directory in the appropriate spots.
+
+Install additional packages for which there are dependencies.
+
+    sudo apt-get install inotify-tools
+
